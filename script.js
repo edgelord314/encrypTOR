@@ -32,14 +32,14 @@ decryptButton.onclick = function () {
 }
 
 document.getElementById("copy-link-button").onclick = function () {
-  copy(link);
+  copyToClipboard(link);
 }
 
-function copy(value) {
-  var tempInput = document.createElement("input");
-  tempInput.value = value;
-  document.body.appendChild(tempInput);
-  tempInput.select();
-  document.execCommand("copy");
-  document.body.removeChild(tempInput);
+function copyToClipboard(text) {
+    var dummy = document.createElement("textarea");
+    document.body.appendChild(dummy);
+    dummy.value = text;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
 }
