@@ -7,25 +7,33 @@
   <meta name="author" content="Malte Dostal">
   <meta name="description" content="OpenSource client-side encryption and decryption of text">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="">
-  <link rel="icon" type="image/x-icon" href=""/>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="" />
 </head>
 
 <body>
-  <header></header>
+  <header>
+    <h1>encrypTOR<span> - OpenSource client-side encyrption</span></h1>
+  </header>
   <main>
     <label for="fname">Text:</label><br>
-    <textarea cols="65" rows="15" id="text-area"></textarea><br>
-    <input type="text" id="pw-field"/> <br>
+    <textarea cols="65" rows="15" id="text-area" class="text-area"></textarea>
+    <p></p>
+    <input type="text" id="pw-field" placeholder="password" />
+    <p></p>
     <button type="button" id="encrypt-button">Encrypt!</button>
     <button type="button" id="decrypt-button">Decrypt!</button>
-  
+
     <p></p>
-    
-    <label for="fname">Output:</label><br>
-    <textarea cols="40" rows="5" id="output-area"></textarea><br>
+
+    <label for="fname">Output:</label>
+    <button type="button" id="copy-link-button" class="copy-link-button">Copy Link!</button>
+    <br>
+    <textarea cols="40" rows="5" id="output-area" class="text-area"></textarea><br>
   </main>
-  <footer></footer>
+  <footer>
+    <p>This webiste and <a href="https://github.com/brix/crypto-js">CryptoJS</a> (used for encrypting) are published under the <a href="https://www.mit.edu/~amini/LICENSE.md">MIT License</a>.</p>
+  </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" integrity="sha256-6rXZCnFzbyZ685/fMsqoxxZz/QZwMnmwHg+SsNe+C/w=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="script.js"></script>
 </body></html>

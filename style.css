@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+* {
+  box-sizing: border-box;
+  /*transition: all ease-in-out 200ms;*/
+}
+
+header {
+  background-color: lightgray;
+  padding: .001em;
+  margin-bottom: 2em;
+}
+
+header span {
+  font-size: 0.6em;
+}
+
+body {
+  margin: 0;
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  background-color: darkslategrey;
+}
+
+input[type="text"], textarea, .text-area {
+  background-color : darkgray;
+}
+
+label {
+  color: gray;
+  font-size: 1.5em;
+}
+
+.copy-link-button {
+  transform: translateY(-.4em);
+}
+
+footer {
+  margin-top: 10em;
+  color: white;
+}
